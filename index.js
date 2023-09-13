@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const router = require('./src/routers');
 app.use('/notes', router);
 
-// app.get('/notes', (req, res) => {
-//     res.send("Update hua hai kuch");
-//     console.log("Jay shree shyam");
-// })
+app.get('/notes/get', (req, res) => {
+    res.send("Update hua hai kuch");
+    console.log("Jay shree shyam");
+})
 
 
 app.listen(PORT, () => {

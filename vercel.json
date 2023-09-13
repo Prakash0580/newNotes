@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "notes/getAll.*",
+      "src": "./notes/get.*",
       "dest": "index.js"
     }
   ]
