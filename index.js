@@ -14,6 +14,7 @@ const router = require('./src/models');
 app.use('/notes', router);
 
 app.get('/', (req, res) => {
+    res.send("Everything is ok");
     console.log("Jay shree shyam");
 })
 
