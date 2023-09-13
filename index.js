@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const router = require('./src/models');
 app.use('/notes', router);
 
-app.get('/', (req, res) => {
-    res.send("Update hua hai");
+app.get('/a', (req, res) => {
+    res.send("Update hua hai kuch");
     console.log("Jay shree shyam");
 })
 
