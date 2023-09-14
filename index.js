@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/Notes");
+mongoose.connect("mongodb+srv://PkumaR:atg6zoCXOPdhE7a2@cluster0.uwtilqf.mongodb.net/Notes").then(() => {
+    console.log("connected");
+});
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
