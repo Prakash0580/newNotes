@@ -16,7 +16,7 @@ const router = require('./src/routers');
 app.use('/notes', router);
 
 app.get('/', (req, res) => {
-    res.send("Update hua hai kuch");
+    res.send("Welcome to NotesBackend");
     console.log("Jay shree shyam");
 })
 
